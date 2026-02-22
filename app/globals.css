@@ -1,6 +1,77 @@
 @import "tailwindcss";
 
-:root {
+/* ✅ These override prose — !important beats Tailwind typography plugin */
+.content-wrapper p,
+.content-wrapper li,
+.content-wrapper ul,
+.content-wrapper ol,
+.content-wrapper blockquote,
+.content-wrapper td,
+.content-wrapper th {
+  font-size: var(--content-size) !important;
+  line-height: var(--content-line-height) !important;
+  transition: font-size 0.2s, line-height 0.2s;
+}
+
+.content-wrapper h1 { font-size: calc(var(--content-size) * 2) !important; }
+.content-wrapper h2 { font-size: calc(var(--content-size) * 1.6) !important; }
+.content-wrapper h3 { font-size: calc(var(--content-size) * 1.3) !important; }
+
+/* Dark mode text colors */
+.content-wrapper.dark-mode p,
+.content-wrapper.dark-mode li { color: #d1d5db; }
+.content-wrapper.dark-mode h1,
+.content-wrapper.dark-mode h2,
+.content-wrapper.dark-mode h3 { color: #ffffff; }
+.content-wrapper.dark-mode a    { color: #7ba3e0; }
+.content-wrapper.dark-mode blockquote { border-color: #4472C4; color: #9ca3af; }
+
+/* Day mode text colors */
+.content-wrapper p,
+.content-wrapper li  { color: #374151; }
+.content-wrapper h1,
+.content-wrapper h2,
+.content-wrapper h3  { color: #1F4E78; }
+.content-wrapper a   { color: #4472C4; }
+
+
+
+/* MDX content spacing */
+.content-wrapper h2 {
+  margin-top: 3rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.content-wrapper h3 {
+  margin-top: 1.0rem !important;
+  margin-bottom: 0.55rem !important;
+}
+
+.content-wrapper p {
+  margin-bottom: 1rem !important;
+   margin-top: 0.5rem !important;
+}
+
+.content-wrapper ul,
+.content-wrapper ol {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  padding-left: 1.5rem !important;
+}
+
+.content-wrapper blockquote {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+  padding-left: 1rem !important;
+  border-left: 4px solid #4472C4 !important;
+}
+
+
+
+
+
+
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
 }
@@ -23,4 +94,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
