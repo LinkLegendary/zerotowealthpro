@@ -130,8 +130,8 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Contact</h2>
             <p className="text-gray-600 leading-relaxed">
               Questions about these terms? Contact us at{' '}
-              <a href="mailto:legal@yoursite.com" className="text-[#4472C4] hover:underline">
-                legal@yoursite.com
+              <a href="mailto:legal@zertowealthpro.com" className="text-[#4472C4] hover:underline">
+                legal@zertowealthpro.com
               </a>
             </p>
           </div>

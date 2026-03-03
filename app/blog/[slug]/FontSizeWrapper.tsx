@@ -16,12 +16,14 @@ export default function FontSizeWrapper({
   date,
   description,
   plainText,
+  readingTime,
 }: {
   children: ReactNode;
   title: string;
   date?: string;
   description?: string;
   plainText?: string;
+  readingTime?: number;
 }) {
   const [sizeIndex, setSizeIndex] = useState(1);
   const [isDark, setIsDark] = useState(false);
@@ -197,9 +199,16 @@ export default function FontSizeWrapper({
                 })}
               </span>
             )}
+
+
+
             <span className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white text-sm px-3 py-1.5 rounded-full border border-white/20">
-              📖 5 min read
-            </span>
+  📖 {readingTime ? `${readingTime} min read` : '9 min read'}
+</span>
+
+
+
+
             <span className="flex items-center gap-1.5 bg-[#4472C4]/60 text-white text-sm px-3 py-1.5 rounded-full border border-[#4472C4]/40">
               💰 Debt Strategy
             </span>

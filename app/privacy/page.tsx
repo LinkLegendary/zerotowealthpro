@@ -120,8 +120,9 @@ export default function PrivacyPage() {
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Contact Us</h2>
             <p className="text-gray-600 leading-relaxed">
               If you have questions about this privacy policy, please contact us at{' '}
-              <a href="mailto:privacy@yoursite.com" className="text-[#4472C4] hover:underline">
-                privacy@yoursite.com
+              <a href="mailto:privacy@zerotowealthpro.com" className="text-[#4472C4] hover:underline">
+                privacy@zerotowealthpro.com
+
               </a>
             </p>
           </div>

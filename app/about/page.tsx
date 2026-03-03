@@ -157,7 +157,7 @@ export default function AboutPage() {
             📰 Read All Articles →
           </Link>
           <a
-            href="https://zerowealthacademy.gumroad.com/l/DebtCalculatorPlus"
+            href="https://zero-to-wealth-pro.kit.com/877e67d219"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 text-center bg-white text-[#1F4E78] font-bold px-6 py-3 rounded-full border-2 border-[#4472C4] hover:bg-blue-50 transition-colors shadow"

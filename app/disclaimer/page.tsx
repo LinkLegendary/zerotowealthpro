@@ -86,7 +86,7 @@ export default function DisclaimerPage() {
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Questions?</h2>
             <p className="text-gray-600 leading-relaxed">
               If you have any questions about our affiliate relationships or how we generate revenue, 
-              please contact us at <a href="mailto:support@yoursite.com" className="text-[#4472C4] hover:underline">support@yoursite.com</a>
+              please contact us at <a href="mailto:contact@zerotowealthpro.com" className="text-[#4472C4] hover:underline">contact@zerotowealthpro.com</a>
             </p>
           </div>
 

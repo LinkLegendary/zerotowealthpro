@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import KitInlineForm from '@/components/KitInlineForm';
 
 export default function HomePage() {
   return (
@@ -112,7 +113,7 @@ export default function HomePage() {
               },
               {
                 title: 'Best Budgeting Apps for Paying Off Debt',
-                href: '/blog/best-budgeting-apps-for-debt',
+                href: '/blog/best-budgeting-apps',
                 desc: 'Compare top tools for tracking spending and accelerating payoff.',
               },
               {
@@ -144,22 +145,12 @@ export default function HomePage() {
         </section>
 
         {/* PRODUCT & ABOUT SECTIONS */}
-        <section className="bg-white rounded-2xl p-6 shadow-xl hover:-translate-y-1 transition-all duration-300">
+        <section className="bg-white rounded-2xl flex flex-col md:flex-col items-center p-6 shadow-xl hover:-translate-y-1 transition-all duration-300">
           <h2 className="text-2xl font-bold text-[#1F4E78] mb-4">
             🧮 Debt Calculator Plus
           </h2>
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Advanced payoff spreadsheet including Snowball, Avalanche, and
-            hybrid comparison mode.
-          </p>
-          <a
-            href="https://zerowealthacademy.gumroad.com/l/DebtCalculatorPlus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#4472C4] text-white px-6 py-3 rounded-full font-bold hover:bg-[#1F4E78] transition-colors"
-          >
-            Get Instant Access →
-          </a>
+
+          <KitInlineForm />
         </section>
 
         <section className="bg-white rounded-2xl p-6 shadow-xl">
@@ -203,12 +194,7 @@ export default function HomePage() {
               → The Minimum Payment Trap Explained
             </Link>
 
-            <Link
-              href="/blog/how-long-to-pay-off-50k"
-              className="hover:underline text-gray-600"
-            >
-              → How Long Does It Take to Pay Off $50K?
-            </Link>
+           
 
             <Link
               href="/blog/credit-card-interest-explained"
@@ -218,21 +204,21 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/blog/is-it-better-to-invest-or-pay-off-debt"
+              href="/blog/invest-or-pay-off-debt-first"
               className="hover:underline text-gray-600"
             >
               → Invest or Pay Off Debt First?
             </Link>
 
             <Link
-              href="/blog/how-much-extra-payment-saves"
+              href="/blog/how-much-does-extra-100-save"
               className="hover:underline text-gray-600"
             >
               → How Much Does an Extra $100 Save?
             </Link>
 
             <Link
-              href="/blog/debt-payoff-psychology"
+              href="/blog/psychology-of-paying-off-debt"
               className="hover:underline text-gray-600"
             >
               → The Psychology of Paying Off Debt
@@ -246,10 +232,119 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/blog/debt-payoff-timeline-calculator-guide"
+              href="/blog/how-to-use-debt-payoff-calculator"
               className="hover:underline text-gray-600"
             >
               → How to Use a Debt Payoff Calculator
+            </Link>
+            <Link
+              href="/blog/how-to-stop-living-paycheck-to-paycheck"
+              className="hover:underline text-gray-600"
+            >
+              → How to Stop Living Paycheck to Paycheck
+            </Link>
+            <Link
+              href="/blog/zero-paycheck-budget-method"
+              className="hover:underline text-gray-600"
+            >
+              → The $0 Paycheck Budget Method: How It Works
+            </Link>
+            <Link
+              href="/blog/how-to-build-emergency-fund-on-low-income"
+              className="hover:underline text-gray-600"
+            >
+              → How to Build an Emergency Fund on Low Income
+            </Link>
+            <Link
+              href="/blog/5-mistakes-keeping-you-stuck-broke"
+              className="hover:underline text-gray-600"
+            >
+              → 5 Mistakes Keeping You Stuck Broke
+            </Link>
+            <Link
+              href="/blog/how-to-reset-your-finances-in-30-days"
+              className="hover:underline text-gray-600"
+            >
+              → How to Reset Your Finances in 30 Days
+            </Link>
+            <Link
+              href="/blog/how-to-get-out-of-debt-on-low-income"
+              className="hover:underline text-gray-600"
+            >
+              → How to Get Out of Debt on a Low Income
+            </Link>
+            <Link
+              href="/blog/credit-card-debt-forgiveness"
+              className="hover:underline text-gray-600"
+            >
+              → Credit Card Debt Forgiveness: Real vs. Scam
+            </Link>
+            <Link
+              href="/blog/how-to-get-lower-interest-rate-credit-card"
+              className="hover:underline text-gray-600"
+            >
+              → How to Get a Lower Interest Rate on a Credit Card
+            </Link>
+            <Link
+              href="/blog/how-to-budget-with-irregular-income"
+              className="hover:underline text-gray-600"
+            >
+              → How to Budget With an Irregular Income
+            </Link>
+            <Link
+              href="/blog/how-to-save-1000-fast"
+              className="hover:underline text-gray-600"
+            >
+              → How to Save $1,000 Fast: A Realistic Step-by-Step Plan
+            </Link>
+            <Link
+              href="/blog/how-to-rebuild-credit-after-debt"
+              className="hover:underline text-gray-600"
+            >
+              → How to Rebuild Credit After Debt: A Step-by-Step Plan
+            </Link>
+            <Link
+              href="/blog/balance-transfer-cards-when-they-help"
+              className="hover:underline text-gray-600"
+            >
+              → Balance Transfer Cards: When They Help vs. Backfire
+            </Link>
+            <Link
+              href="/blog/what-order-to-pay-off-debts"
+              className="hover:underline text-gray-600"
+            >
+              → What Order Should I Pay Off My Debts?
+            </Link>
+            <Link
+              href="/blog/how-to-get-out-of-payday-loan-debt"
+              className="hover:underline text-gray-600"
+            >
+             → How to Get Out of Payday Loan Debt: A Step-by-Step Plan
+            </Link>
+           
+            <Link
+              href="/blog/5-mistakes-keeping-you-stuck-broke"
+              className="hover:underline text-gray-600"
+            >
+             → 5 Mistakes Keeping You Stuck Broke 
+            </Link>
+            <Link
+              href="/blog/best-budgeting-apps"
+              className="hover:underline text-gray-600"
+            >
+             → Best Budgeting Apps for Paying Off Debt in 2026
+            </Link>
+            <Link
+              href="/blog/budgeting-when-youre-broke"
+              className="hover:underline text-gray-600"
+            >
+             → Budgeting When You are Broke: A Realistic System
+            </Link>
+            <Link
+              href="/blog/pay-off-50k-credit-card-debt"
+              className="hover:underline text-gray-600"
+            >
+             → Pay Off $50K at 20% Interest: Month-by-Month Breakdown
             </Link>
           </div>
         </section>
@@ -272,7 +367,15 @@ export default function HomePage() {
         </section>
 
         {/* FOOTER */}
-        <footer className="text-center text-white mt-12 opacity-80 text-sm space-y-2">
+
+        <footer className="text-center text-white mt-12 opacity-80 text-sm space-y-3">
+          {/* SHORT DISCLAIMER — ADD THIS */}
+          <p className="max-w-2xl mx-auto opacity-90">
+            Disclaimer: This website provides educational content only and is
+            not financial advice. Some links may be affiliate links, which means
+            we may earn a commission at no extra cost to you.
+          </p>
+
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link href="/privacy" className="hover:underline">
               Privacy Policy
@@ -290,6 +393,7 @@ export default function HomePage() {
               Contact
             </Link>
           </div>
+
           <p>© 2026 Debt Freedom Guide</p>
         </footer>
       </main>
