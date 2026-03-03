@@ -198,18 +198,7 @@ export default function DebtPayoffPage() {
               eliminate debt faster and save thousands in interest.
             </p>
 
-            {/* Editorial byline */}
-            <p className="text-white/60 text-sm mb-8">
-              Reviewed by{' '}
-              <Link href="/about/james-whitfield" className="text-white/80 hover:text-white underline">
-                James Whitfield, AFC®
-              </Link>{' '}
-              &{' '}
-              <Link href="/about/lisa-carmichael" className="text-white/80 hover:text-white underline">
-                Lisa Carmichael, AFC®
-              </Link>
-              {' '}— Accredited Financial Counselors
-            </p>
+            
 
             <Link
               href="/blog/debt-snowball-vs-avalanche"
