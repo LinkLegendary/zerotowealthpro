@@ -11,7 +11,7 @@ export interface Post {
   keywords?: string;
   author?: string;
   authorBio?: string;
-  readingTime?: number;
+  readingTime: number;
 }
 
 export interface Author {
