@@ -3,17 +3,19 @@
 import Link from 'next/link';
 import { useState, useMemo } from 'react';
 import KitInlineForm from '@/components/KitInlineForm';
+import type { Post } from '@/lib/blog';
+
 
 // Since this is now a client component, we pass posts as props
 // Update your page to use a wrapper — see instructions below
 
-interface Post {
-  slug: string;
-  title: string;
-  description: string;
-  date: string;
-  readingTime: number; // add this
-}
+// interface Post {
+//   slug: string;
+//   title: string;
+//   description: string;
+//   date: string;
+//   readingTime: number; // add this
+// }
 
 export default function BlogPageClient({ posts }: { posts: Post[] }) {
   const [query, setQuery] = useState('');
@@ -297,30 +299,10 @@ export default function BlogPageClient({ posts }: { posts: Post[] }) {
           </div>
         )}
 
-
-
-
-
-
-
-
-
-
-
-       {/* Bottom CTA — inline email opt-in */}
-<div className="mt-12">
-  <KitInlineForm />
-</div>
-
-
-
-
-
-
-
-
-
-
+        {/* Bottom CTA — inline email opt-in */}
+        <div className="mt-12">
+          <KitInlineForm />
+        </div>
 
         {/* ADD DISCLAIMER HERE */}
         <div className="mt-6 text-center max-w-2xl mx-auto">
