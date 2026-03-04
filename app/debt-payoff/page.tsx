@@ -131,7 +131,7 @@ const spokes = {
   ],
   tools: [
     {
-      href: '/blog/best-budgeting-apps',
+      href: '/blog/best-budgeting-apps-for-debt-payoff',
       label: 'Best Budgeting Apps for Paying Off Debt in 2026',
     },
     {
