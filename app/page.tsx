@@ -33,7 +33,7 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/blog/debt-snowball-vs-avalanche"
+              href="/blog/debt-snowball-vs-debt-avalanche"
               className="flex-1 text-center flex justify-center items-center bg-transparent border border-white text-white px-4 py-3 rounded-full font-bold hover:bg-white hover:text-[#4472C4] transition"
             >
               Compare Snowball vs Avalanche
@@ -92,7 +92,7 @@ export default function HomePage() {
             interest comparison charts.
           </p>
           <Link
-            href="/blog/debt-snowball-vs-avalanche"
+            href="/blog/debt-snowball-vs-debt-avalanche"
             className="inline-block bg-[#4472C4] text-white px-6 py-3 rounded-full font-bold hover:bg-[#1F4E78] transition-colors"
           >
             Read Full Guide →
@@ -108,17 +108,17 @@ export default function HomePage() {
             {[
               {
                 title: 'The Minimum Payment Trap Explained',
-                href: '/blog/minimum-payment-trap',
+                href: '/blog/minimum-payment-trap-explained',
                 desc: 'How credit card companies maximize interest — and how to escape it.',
               },
               {
                 title: 'Best Budgeting Apps for Paying Off Debt',
-                href: '/blog/best-budgeting-apps',
+                href: '/blog/best-budgeting-apps-for-debt-payoff',
                 desc: 'Compare top tools for tracking spending and accelerating payoff.',
               },
               {
-                title: 'How Long Does It Take to Pay Off $50K?',
-                href: '/blog/how-long-to-pay-off-50k',
+                title: 'How Long Does It Take to Pay Off $50K in Credit Card Debt at 20% Interest?',
+                href: '/blog/how-long-to-pay-off-50k-credit-card-debt',
                 desc: 'Realistic payoff scenarios based on income and extra payments.',
               },
             ].map((article, i) => (
@@ -181,20 +181,18 @@ export default function HomePage() {
             </Link>
 
             <Link
-              href="/blog/debt-snowball-vs-avalanche"
+              href="/blog/debt-snowball-vs-debt-avalanche"
               className="hover:underline text-gray-600"
             >
               → Debt Snowball vs Debt Avalanche
             </Link>
 
             <Link
-              href="/blog/minimum-payment-trap"
+              href="/blog/minimum-payment-trap-explained"
               className="hover:underline text-gray-600"
             >
               → The Minimum Payment Trap Explained
             </Link>
-
-           
 
             <Link
               href="/blog/credit-card-interest-explained"
@@ -319,32 +317,38 @@ export default function HomePage() {
               href="/blog/how-to-get-out-of-payday-loan-debt"
               className="hover:underline text-gray-600"
             >
-             → How to Get Out of Payday Loan Debt: A Step-by-Step Plan
+              → How to Get Out of Payday Loan Debt: A Step-by-Step Plan
             </Link>
-           
+
             <Link
               href="/blog/5-mistakes-keeping-you-stuck-broke"
               className="hover:underline text-gray-600"
             >
-             → 5 Mistakes Keeping You Stuck Broke 
+              → 5 Mistakes Keeping You Stuck Broke
             </Link>
             <Link
               href="/blog/best-budgeting-apps"
               className="hover:underline text-gray-600"
             >
-             → Best Budgeting Apps for Paying Off Debt in 2026
+              → Best Budgeting Apps for Paying Off Debt in 2026
             </Link>
             <Link
               href="/blog/budgeting-when-youre-broke"
               className="hover:underline text-gray-600"
             >
-             → Budgeting When You are Broke: A Realistic System
+              → Budgeting When You are Broke: A Realistic System
             </Link>
             <Link
               href="/blog/pay-off-50k-credit-card-debt"
               className="hover:underline text-gray-600"
             >
-             → Pay Off $50K at 20% Interest: Month-by-Month Breakdown
+              → Pay Off $50K at 20% Interest: Month-by-Month Breakdown
+            </Link>
+            <Link
+              href="/blog/the-complete-debt-payoff-system"
+              className="hover:underline text-gray-600"
+            >
+              → The Complete Debt Payoff System
             </Link>
           </div>
         </section>
@@ -370,23 +374,21 @@ export default function HomePage() {
 
         <footer className="text-center text-white mt-12 opacity-80 text-sm space-y-3">
           {/* SHORT DISCLAIMER — ADD THIS */}
-          <p className="max-w-2xl mx-auto opacity-90">
-            Disclaimer: This website provides educational content only and is
-            not financial advice. Some links may be affiliate links, which means
-            we may earn a commission at no extra cost to you.
-          </p>
-
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <Link href="/privacy" className="hover:underline">
               Privacy Policy
             </Link>
             <span>•</span>
             <Link href="/terms" className="hover:underline">
-              Terms of Service
+              Terms of Use
             </Link>
             <span>•</span>
             <Link href="/disclaimer" className="hover:underline">
               Affiliate Disclosure
+            </Link>
+            <span>•</span>
+            <Link href="/about/editorial-team" className="hover:underline">
+              Editorial Standards
             </Link>
             <span>•</span>
             <Link href="/contact" className="hover:underline">
@@ -394,7 +396,10 @@ export default function HomePage() {
             </Link>
           </div>
 
-          <p>© 2026 Debt Freedom Guide</p>
+          <p>
+            Copyright © {new Date().getFullYear()} ZeroToWealthPro. All rights
+            reserved.
+          </p>
         </footer>
       </main>
     </div>

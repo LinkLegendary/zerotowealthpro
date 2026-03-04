@@ -14,11 +14,11 @@ export default function TermsPage() {
           <div className="flex items-center justify-center gap-2 text-blue-200 text-sm mb-6">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>
             <span>›</span>
-            <span className="text-white/70">Terms of Service</span>
+            <span className="text-white/70">Terms of Use</span>{/* FIX 1 */}
           </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4 drop-shadow-lg">
-            Terms of Service
+            Terms of Use{/* FIX 2 */}
           </h1>
         </div>
 
@@ -42,7 +42,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Agreement to Terms</h2>
             <p className="text-gray-600 leading-relaxed">
-              By accessing this website, you agree to be bound by these Terms of Service and our Privacy Policy. 
+              By accessing this website, you agree to be bound by these Terms of Use and our Privacy Policy. 
               If you do not agree to these terms, please do not use our site.
             </p>
           </div>
@@ -81,7 +81,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Intellectual Property</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
               All content on this site, including articles, calculators, graphics, and logos, is owned by 
-              Debt Freedom Guide or its content creators and is protected by copyright law.
+              ZeroToWealthPro and is protected by copyright law.{/* FIX 3 */}
             </p>
             <p className="text-gray-600 leading-relaxed">
               You may share our articles and link to our content, but you may not copy, reproduce, or 
@@ -104,7 +104,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Limitation of Liability</h2>
             <p className="text-gray-600 leading-relaxed">
-              To the fullest extent permitted by law, Debt Freedom Guide shall not be liable for any direct, 
+              To the fullest extent permitted by law, ZeroToWealthPro shall not be liable for any direct,{/* FIX 4 */}
               indirect, incidental, or consequential damages arising from your use of this site or reliance 
               on our content.
             </p>
@@ -130,8 +130,8 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Contact</h2>
             <p className="text-gray-600 leading-relaxed">
               Questions about these terms? Contact us at{' '}
-              <a href="mailto:legal@zertowealthpro.com" className="text-[#4472C4] hover:underline">
-                legal@zertowealthpro.com
+              <a href="mailto:legal@zerotowealthpro.com" className="text-[#4472C4] hover:underline">
+                legal@zerotowealthpro.com
               </a>
             </p>
           </div>
@@ -147,3 +147,4 @@ export default function TermsPage() {
     </div>
   )
 }
+

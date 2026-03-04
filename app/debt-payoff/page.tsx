@@ -62,7 +62,7 @@ const faqSchema = {
 const spokes = {
   strategy: [
     {
-      href: '/blog/debt-snowball-vs-avalanche',
+      href: '/blog/debt-snowball-vs-debt-avalanche',
       label: 'Snowball vs Avalanche: Which Pays Off Debt Faster?',
     },
     {
@@ -105,10 +105,14 @@ const spokes = {
       href: '/blog/how-to-rebuild-credit-after-debt',
       label: 'How to Rebuild Credit After Debt: A Step-by-Step Plan',
     },
+    {
+      href: '/blog/the-complete-debt-payoff-system',
+      label: 'The Complete Debt Payoff System',
+    },
   ],
   math: [
     {
-      href: '/blog/minimum-payment-trap',
+      href: '/blog/minimum-payment-trap-explained',
       label: 'The Minimum Payment Trap: How $10,000 Becomes $21,000',
     },
     {
@@ -185,7 +189,7 @@ export default function DebtPayoffPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="min-h-screen bg-gradient-to-br from-[#667eea] to-[#764ba2] p-5">
+      <div className="min-h-screen bg-gradient-to-br from-[#1F4E78] to-[#4472C4] p-5">
         <div className="max-w-[900px] mx-auto py-12 text-white">
 
           {/* HERO */}
@@ -236,7 +240,7 @@ export default function DebtPayoffPage() {
                 ))}
               </ul>
               <Link
-                href="/blog/minimum-payment-trap"
+                href="/blog/minimum-payment-trap-explained"
                 className="text-[#4472C4] font-semibold hover:underline"
               >
                 → Read: The Minimum Payment Trap: How $10,000 Becomes $21,000
@@ -302,7 +306,7 @@ export default function DebtPayoffPage() {
                 </div>
               </div>
               <Link
-                href="/blog/debt-snowball-vs-avalanche"
+                href="/blog/debt-snowball-vs-debt-avalanche"
                 className="text-[#4472C4] font-semibold hover:underline"
               >
                 → Full comparison: Snowball vs Avalanche — Which Pays Off Debt Faster?

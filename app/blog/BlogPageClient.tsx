@@ -143,9 +143,9 @@ export default function BlogPageClient({ posts }: { posts: Post[] }) {
             </div>
             <div className="w-px h-8 bg-white/20" />
             <div className="text-center">
-              <p className="text-2xl font-bold text-white">Free</p>
+              <p className="text-2xl font-bold text-white"></p>
               <p className="text-blue-200 text-xs uppercase tracking-wider mt-0.5">
-                Always
+                {/* Always */}
               </p>
             </div>
             <div className="w-px h-8 bg-white/20" />
