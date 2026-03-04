@@ -119,7 +119,7 @@ const spokes = {
       href: '/blog/pay-off-50k-credit-card-debt',
       label: 'Pay Off $50K at 20% Interest: Month-by-Month Breakdown',
     },
-   
+
     {
       href: '/blog/how-much-does-extra-100-save',
       label: 'How Much Does an Extra $100 Save on Debt?',
@@ -191,7 +191,6 @@ export default function DebtPayoffPage() {
 
       <div className="min-h-screen bg-gradient-to-br from-[#1F4E78] to-[#4472C4] p-5">
         <div className="max-w-[900px] mx-auto py-12 text-white">
-
           {/* HERO */}
           <section className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
@@ -202,10 +201,8 @@ export default function DebtPayoffPage() {
               eliminate debt faster and save thousands in interest.
             </p>
 
-            
-
             <Link
-              href="/blog/debt-snowball-vs-avalanche"
+              href="/blog/debt-snowball-vs-debt-avalanche"
               className="inline-block bg-white text-[#4472C4] px-8 py-4 rounded-full font-bold hover:scale-105 transition"
             >
               Start With Strategy: Snowball vs Avalanche →
@@ -214,7 +211,6 @@ export default function DebtPayoffPage() {
 
           {/* CONTENT WRAPPER */}
           <div className="bg-white text-gray-700 rounded-2xl shadow-xl p-8 space-y-12">
-
             {/* SECTION 1 */}
             <section>
               <h2 className="text-3xl font-bold text-[#1F4E78] mb-4">
@@ -268,7 +264,8 @@ export default function DebtPayoffPage() {
               <p className="leading-relaxed mb-6">
                 Most people who do this for the first time discover their total
                 debt is higher than estimated — and their monthly interest
-                charges are higher than they realized. That discomfort is useful.
+                charges are higher than they realized. That discomfort is
+                useful.
               </p>
               <Link
                 href="/blog/what-order-to-pay-off-debts"
@@ -284,24 +281,28 @@ export default function DebtPayoffPage() {
                 Step 2: Choose Your Method
               </h2>
               <p className="leading-relaxed mb-4">
-                Two methods work. Choose one and commit to it for the full payoff
-                timeline — switching midway resets momentum.
+                Two methods work. Choose one and commit to it for the full
+                payoff timeline — switching midway resets momentum.
               </p>
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
-                  <p className="font-bold text-[#1F4E78] mb-2">❄️ Debt Snowball</p>
+                  <p className="font-bold text-[#1F4E78] mb-2">
+                    ❄️ Debt Snowball
+                  </p>
                   <p className="text-sm text-gray-600">
-                    Pay minimums on all accounts. Attack the <strong>smallest balance</strong>{' '}
-                    first with every extra dollar. Best for motivation — early wins
-                    keep you going.
+                    Pay minimums on all accounts. Attack the{' '}
+                    <strong>smallest balance</strong> first with every extra
+                    dollar. Best for motivation — early wins keep you going.
                   </p>
                 </div>
                 <div className="bg-green-50 border border-green-100 rounded-xl p-5">
-                  <p className="font-bold text-[#1F4E78] mb-2">🔥 Debt Avalanche</p>
+                  <p className="font-bold text-[#1F4E78] mb-2">
+                    🔥 Debt Avalanche
+                  </p>
                   <p className="text-sm text-gray-600">
-                    Pay minimums on all accounts. Attack the <strong>highest APR</strong>{' '}
-                    first with every extra dollar. Saves the most interest — optimal
-                    for math-driven payoff.
+                    Pay minimums on all accounts. Attack the{' '}
+                    <strong>highest APR</strong> first with every extra dollar.
+                    Saves the most interest — optimal for math-driven payoff.
                   </p>
                 </div>
               </div>
@@ -309,7 +310,8 @@ export default function DebtPayoffPage() {
                 href="/blog/debt-snowball-vs-debt-avalanche"
                 className="text-[#4472C4] font-semibold hover:underline"
               >
-                → Full comparison: Snowball vs Avalanche — Which Pays Off Debt Faster?
+                → Full comparison: Snowball vs Avalanche — Which Pays Off Debt
+                Faster?
               </Link>
             </section>
 
@@ -319,9 +321,9 @@ export default function DebtPayoffPage() {
                 Step 3: Set a Fixed Extra Payment and Automate It
               </h2>
               <p className="leading-relaxed mb-4">
-                The difference between minimum payments and a fixed extra payment
-                is measured in years and thousands of dollars. On a $10,000 balance
-                at 22% APR:
+                The difference between minimum payments and a fixed extra
+                payment is measured in years and thousands of dollars. On a
+                $10,000 balance at 22% APR:
               </p>
               <ul className="space-y-2 mb-6">
                 {[
@@ -348,15 +350,16 @@ export default function DebtPayoffPage() {
               <p className="leading-relaxed mb-6">
                 Before throwing extra money at debt, spend 10 minutes trying to
                 reduce its cost. A 6-point APR reduction on a $10,000 balance
-                saves $600/year — $50/month freed from interest and redirected to
-                principal. Three tools that work:
+                saves $600/year — $50/month freed from interest and redirected
+                to principal. Three tools that work:
               </p>
               <div className="space-y-3">
                 <Link
                   href="/blog/how-to-get-lower-interest-rate-credit-card"
                   className="block text-[#4472C4] font-semibold hover:underline"
                 >
-                  → How to Get a Lower Interest Rate on a Credit Card (one 10-minute call)
+                  → How to Get a Lower Interest Rate on a Credit Card (one
+                  10-minute call)
                 </Link>
                 <Link
                   href="/blog/balance-transfer-cards-when-they-help"
@@ -382,7 +385,8 @@ export default function DebtPayoffPage() {
                 If you pay $500/month toward a card and add $200 in new charges,
                 your effective payment is $300. You are not attacking debt — you
                 are running in place. During payoff, stop using any card you are
-                actively paying down. Use a debit card or cash for daily expenses.
+                actively paying down. Use a debit card or cash for daily
+                expenses.
               </p>
             </section>
 
@@ -411,7 +415,8 @@ export default function DebtPayoffPage() {
                 spreadsheet. Research in behavioral economics consistently finds
                 that people who actively track financial goals make faster
                 progress than those on passive autopay alone. Watching the
-                number drop creates accountability that autopay cannot replicate.
+                number drop creates accountability that autopay cannot
+                replicate.
               </p>
             </section>
 
@@ -445,17 +450,22 @@ export default function DebtPayoffPage() {
                   },
                 ].map(({ badge, label, time, interest, bg }) => (
                   <div key={label} className={`rounded-xl p-5 ${bg}`}>
-                    <p className="text-xs font-bold text-gray-500 mb-2">{badge}</p>
+                    <p className="text-xs font-bold text-gray-500 mb-2">
+                      {badge}
+                    </p>
                     <p className="font-semibold text-gray-800 mb-1">{label}</p>
-                    <p className="text-2xl font-extrabold text-[#1F4E78] mb-1">{time}</p>
+                    <p className="text-2xl font-extrabold text-[#1F4E78] mb-1">
+                      {time}
+                    </p>
                     <p className="text-sm text-gray-500">{interest}</p>
                   </div>
                 ))}
               </div>
               <p className="text-sm text-gray-500">
                 Going from $1,500 to $2,000/month saves{' '}
-                <strong className="text-gray-700">$7,900 in interest</strong> and{' '}
-                <strong className="text-gray-700">15 months</strong> of payments.{' '}
+                <strong className="text-gray-700">$7,900 in interest</strong>{' '}
+                and <strong className="text-gray-700">15 months</strong> of
+                payments.{' '}
                 <Link
                   href="/blog/pay-off-50k-credit-card-debt"
                   className="text-[#4472C4] hover:underline"
@@ -496,11 +506,11 @@ export default function DebtPayoffPage() {
                 Deep Dive: Debt Payoff Guides
               </h2>
               <p className="text-sm text-gray-500 mb-10">
-                Articles with real math, month-by-month breakdowns, and sourced data.
+                Articles with real math, month-by-month breakdowns, and sourced
+                data.
               </p>
 
               <div className="grid md:grid-cols-2 gap-10">
-
                 {/* STRATEGY */}
                 <div>
                   <h3 className="text-sm font-bold tracking-widest uppercase text-[#4472C4] mb-4">
@@ -572,13 +582,13 @@ export default function DebtPayoffPage() {
                     ))}
                   </div>
                 </div>
-
               </div>
             </section>
             {/* ── END CONTENT HUB ─────────────────────────────────────────── */}
-
-          </div>{/* end bg-white content wrapper */}
-        </div>{/* end max-w container */}
+          </div>
+          {/* end bg-white content wrapper */}
+        </div>
+        {/* end max-w container */}
 
         {/* DISCLAIMER */}
         <section className="max-w-[900px] mx-auto mt-8 mb-4 px-6">
@@ -586,8 +596,8 @@ export default function DebtPayoffPage() {
             <p className="text-white/80 text-sm leading-relaxed max-w-2xl mx-auto text-center">
               <strong className="text-white">Disclaimer:</strong> This guide is
               for educational purposes only and does not constitute financial
-              advice. Results vary based on income, expenses, interest rates, and
-              consistency of payments. Always consult a qualified financial
+              advice. Results vary based on income, expenses, interest rates,
+              and consistency of payments. Always consult a qualified financial
               professional before making significant financial decisions. This
               page may contain affiliate links — we may earn a commission at no
               extra cost to you.
@@ -603,7 +613,6 @@ export default function DebtPayoffPage() {
             ← Back to Home
           </Link>
         </div>
-
       </div>
     </>
   );

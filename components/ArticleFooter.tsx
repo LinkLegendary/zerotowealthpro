@@ -36,7 +36,7 @@ export default function ArticleFooter() {
           </Link>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-4">
         <ArrowToHome />
       </div>
     </div>
