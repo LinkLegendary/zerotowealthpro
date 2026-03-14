@@ -121,8 +121,8 @@ const spokes = {
     },
 
     {
-      href: '/blog/how-much-does-extra-100-save',
-      label: 'How Much Does an Extra $100 Save on Debt?',
+      href: '/blog/extra-$100-on-debt',
+      label: 'Extra $100 on Debt: How Much Does It Save?',
     },
     {
       href: '/blog/credit-card-interest-explained',

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     default: "Zero to Wealth Pro",
     template: "%s | Zero to Wealth Pro",
   },
+  icons: {
+     icon: "/zwp.png",
+  },
   description:
     "Structured debt payoff systems, calculators, and real-world financial breakdowns.",
   keywords: [

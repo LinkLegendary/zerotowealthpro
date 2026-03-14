@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import KitInlineForm from '@/components/KitInlineForm';
+import DebtCalculatorEmbed from '@/components/DebtCalculatorEmbed';
+
 
 export default function HomePage() {
   return (
@@ -147,10 +149,11 @@ export default function HomePage() {
         {/* PRODUCT & ABOUT SECTIONS */}
         <section className="bg-white rounded-2xl flex flex-col md:flex-col items-center p-6 shadow-xl hover:-translate-y-1 transition-all duration-300">
           <h2 className="text-2xl font-bold text-[#1F4E78] mb-4">
-            🧮 Debt Calculator Plus
+            🧮 Free Debt Payoff Calculator 
           </h2>
 
           <KitInlineForm />
+          <DebtCalculatorEmbed />
         </section>
 
         <section className="bg-white rounded-2xl p-6 shadow-xl">
@@ -327,7 +330,7 @@ export default function HomePage() {
               → 5 Mistakes Keeping You Stuck Broke
             </Link>
             <Link
-              href="/blog/best-budgeting-apps"
+              href="/blog/best-budgeting-apps-for-debt-payoff"
               className="hover:underline text-gray-600"
             >
               → Best Budgeting Apps for Paying Off Debt in 2026
@@ -339,7 +342,7 @@ export default function HomePage() {
               → Budgeting When You are Broke: A Realistic System
             </Link>
             <Link
-              href="/blog/pay-off-50k-credit-card-debt"
+              href="/blog/how-long-to-pay-off-50k-credit-card-debt"
               className="hover:underline text-gray-600"
             >
               → Pay Off $50K at 20% Interest: Month-by-Month Breakdown
