@@ -148,11 +148,9 @@ export default function HomePage() {
 
         {/* PRODUCT & ABOUT SECTIONS */}
         <section className="bg-white rounded-2xl flex flex-col md:flex-col items-center p-6 shadow-xl hover:-translate-y-1 transition-all duration-300">
-          <h2 className="text-2xl font-bold text-[#1F4E78] mb-4">
-            🧮 Free Debt Payoff Calculator 
-          </h2>
+          
 
-          <KitInlineForm />
+        
           <DebtCalculatorEmbed />
         </section>
 

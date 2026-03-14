@@ -488,8 +488,9 @@ export default function DebtCalculator() {
             {/* Email capture */}
             <div className="dc-email-capture">
               <div style={{ fontSize: 36, marginBottom: 12 }}>📬</div>
-              <div className="dc-email-heading">Send My Payoff Plan to My Email</div>
-              <div className="dc-email-sub">Get your results link + a free debt tip sent straight to your inbox.</div>
+              
+              <div className="dc-email-heading">Send FREE PDF Complete Debt Payoff Guide to My Email</div>
+              
 
               {kitStatus !== 'success' ? (
                 <div className="dc-email-form">
