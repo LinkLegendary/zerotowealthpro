@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Script from 'next/script';
 
 import KitInlineForm from '@/components/KitInlineForm';
+import DebtCalculatorEmbed from '@/components/DebtCalculatorEmbed';
 
 export const metadata: Metadata = {
   title: 'The Complete Debt Payoff System (Step-by-Step) | ZeroToWealthPro',
@@ -475,8 +476,9 @@ export default function DebtPayoffPage() {
               </p>
             </section>
 
-            {/* EMAIL OPT-IN */}
-            <KitInlineForm />
+           
+            
+            <DebtCalculatorEmbed />
 
             {/* FAQ */}
             <section>
