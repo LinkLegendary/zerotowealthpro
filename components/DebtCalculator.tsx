@@ -317,16 +317,31 @@ export default function DebtCalculator() {
         {/* INPUT CARD */}
         <div className="dc-card">
           <div className="dc-section-label">Your Debts</div>
+
+          {/* Desktop column headers — hidden on mobile */}
           <div className="dc-col-headers">
             <span>Debt Name</span><span>Balance ($)</span><span>Rate (% APR)</span><span>Min Payment</span><span />
           </div>
 
           {debts.map(d => (
             <div key={d.id} className="dc-debt-row">
-              <input className="dc-input" placeholder="Debt name"    value={d.name}    onChange={e => updateDebt(d.id, 'name',    e.target.value)} />
-              <input className="dc-input" placeholder="Balance"      value={d.balance} onChange={e => updateDebt(d.id, 'balance', e.target.value)} type="number" min="0" />
-              <input className="dc-input" placeholder="Rate %"       value={d.rate}    onChange={e => updateDebt(d.id, 'rate',    e.target.value)} type="number" min="0" step="0.01" />
-              <input className="dc-input" placeholder="Min payment"  value={d.min}     onChange={e => updateDebt(d.id, 'min',     e.target.value)} type="number" min="0" />
+              {/* Desktop: plain inputs. Mobile: label-value pairs */}
+              <div className="dc-field">
+                <span className="dc-field-label">Debt Name</span>
+                <input className="dc-input" placeholder="e.g. Credit Card" value={d.name} onChange={e => updateDebt(d.id, 'name', e.target.value)} />
+              </div>
+              <div className="dc-field">
+                <span className="dc-field-label">Balance ($)</span>
+                <input className="dc-input" placeholder="0" value={d.balance} onChange={e => updateDebt(d.id, 'balance', e.target.value)} type="number" min="0" />
+              </div>
+              <div className="dc-field">
+                <span className="dc-field-label">Rate (% APR)</span>
+                <input className="dc-input" placeholder="0.00" value={d.rate} onChange={e => updateDebt(d.id, 'rate', e.target.value)} type="number" min="0" step="0.01" />
+              </div>
+              <div className="dc-field">
+                <span className="dc-field-label">Min Payment</span>
+                <input className="dc-input" placeholder="0" value={d.min} onChange={e => updateDebt(d.id, 'min', e.target.value)} type="number" min="0" />
+              </div>
               <button className="dc-del-btn" onClick={() => removeDebt(d.id)}>×</button>
             </div>
           ))}
@@ -488,16 +503,15 @@ export default function DebtCalculator() {
             {/* Email capture */}
             <div className="dc-email-capture">
               <div style={{ fontSize: 36, marginBottom: 12 }}>📬</div>
-              
               <div className="dc-email-heading">Send FREE PDF Complete Debt Payoff Guide to My Email</div>
-              
+              <div className="dc-email-sub"></div>
 
               {kitStatus !== 'success' ? (
                 <div className="dc-email-form">
                   <input className="dc-email-input" type="text"  placeholder="First name"          value={fname} onChange={e => setFname(e.target.value)} />
                   <input className="dc-email-input" type="email" placeholder="Your email address"  value={email} onChange={e => setEmail(e.target.value)} />
                   <button className="dc-btn-email" onClick={submitToKit} disabled={kitStatus === 'loading'}>
-                    {kitStatus === 'loading' ? '⏳ Sending…' : kitStatus === 'error' ? '⚠️ Try again' : '📧 Email Me My Results'}
+                    {kitStatus === 'loading' ? '⏳ Sending…' : kitStatus === 'error' ? '⚠️ Try again' : '📧 Email Me'}
                   </button>
                   {kitStatus === 'error' && (
                     <p style={{ fontSize: 11, color: 'var(--dc-red)', marginTop: 8 }}>
@@ -510,7 +524,7 @@ export default function DebtCalculator() {
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ fontSize: 48, marginBottom: 12 }}>🎉</div>
                   <div className="dc-success-heading">You&apos;re in!</div>
-                  <div className="dc-email-sub">Check your inbox — your results link is on its way.</div>
+                  <div className="dc-email-sub"></div>
                   {results.resultsURL && (
                     <div className="dc-save-card" style={{ marginTop: 16, textAlign: 'left' }}>
                       <div className="dc-save-label">🔗 Or copy your results link directly:</div>
@@ -567,8 +581,7 @@ const STYLES = `
   .dc-card::before { content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--dc-accent),transparent);opacity:.4; }
   .dc-col-headers { display:grid;grid-template-columns:1fr 110px 110px 110px 36px;gap:8px;margin-bottom:8px; }
   .dc-col-headers span { font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--dc-muted);padding-left:4px; }
-  .dc-debt-row { display:grid;grid-template-columns:1fr 110px 110px 110px 36px;gap:8px;align-items:center;margin-bottom:8px; }
-  .dc-input { background:var(--dc-surface);border:1px solid var(--dc-border);border-radius:8px;color:var(--dc-text);font-family:'SF Mono','Consolas',monospace;font-size:13px;padding:10px 12px;outline:none;transition:border-color .2s,box-shadow .2s;width:100%; }
+  .dc-debt-row { display:grid;grid-template-columns:1fr 110px 110px 110px 36px;gap:8px;align-items:center;margin-bottom:8px; }  .dc-input { background:var(--dc-surface);border:1px solid var(--dc-border);border-radius:8px;color:var(--dc-text);font-family:'SF Mono','Consolas',monospace;font-size:13px;padding:10px 12px;outline:none;transition:border-color .2s,box-shadow .2s;width:100%; }
   .dc-input:focus { border-color:var(--dc-accent);box-shadow:0 0 0 3px rgba(0,229,255,.1); }
   .dc-input::placeholder { color:#8fb3cc; }
   .dc-del-btn { background:none;border:1px solid var(--dc-border);border-radius:8px;color:var(--dc-muted);cursor:pointer;font-size:16px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;transition:border-color .2s,color .2s; }
@@ -589,7 +602,82 @@ const STYLES = `
   @keyframes dc-pulse { 0%,100%{opacity:.4} 50%{opacity:1} }
   @keyframes dc-fadeup { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
   .dc-results-grid { display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:0 24px 20px;animation:dc-fadeup .4s ease; }
-  @media(max-width:520px){.dc-results-grid{grid-template-columns:1fr}.dc-debt-row,.dc-col-headers{grid-template-columns:1fr 1fr}}
+  /* ── dc-field: label + input wrapper ── */
+  .dc-field { display:contents; }
+  .dc-field-label { display:none; }
+
+  @media(max-width:600px){
+    .dc-wrap { font-size:14px; }
+    .dc-card { padding:18px 14px;margin:0 10px 18px; }
+    .dc-section-label { padding:0 10px; }
+    .dc-results-grid { grid-template-columns:1fr;margin:0 10px 16px; }
+    .dc-tip-card,.dc-savings-banner,.dc-spotlight,.dc-save-card,.dc-email-capture,.dc-restored-banner { margin-left:10px;margin-right:10px; }
+    .dc-email-capture { padding:24px 16px; }
+
+    /* Hide desktop column headers */
+    .dc-col-headers { display:none; }
+
+    /* Each debt row becomes a card with label+input rows */
+    .dc-debt-row {
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      background:var(--dc-surface);
+      border:1px solid var(--dc-border);
+      border-radius:12px;
+      padding:14px;
+      margin-bottom:12px;
+    }
+
+    /* Each field = label on left, input on right */
+    .dc-field {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      contents:unset;
+    }
+    .dc-field-label {
+      display:block;
+      font-size:13px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      color:var(--dc-text);
+      white-space:nowrap;
+      width:100px;
+      flex-shrink:0;
+    }
+    .dc-field .dc-input {
+      flex:1;
+      min-width:0;
+    }
+
+    /* Delete button sits at top-right */
+    .dc-debt-row .dc-del-btn {
+      align-self:flex-end;
+      margin-top:-4px;
+    }
+
+    .dc-extra-row { flex-direction:column;align-items:flex-start;gap:8px; }
+    .dc-extra-input { width:100%!important; }
+    .dc-btn-row { flex-direction:column; }
+    .dc-btn { width:100%;text-align:center; }
+    .dc-table { font-size:11px; }
+    .dc-table thead th { font-size:9px;padding:6px 5px; }
+    .dc-table tbody td { padding:7px 5px;font-size:11px; }
+    .dc-cmp-cell { padding:8px 5px;font-size:10px; }
+    .dc-cmp-hdr,.dc-cmp-hdr-snow,.dc-cmp-hdr-aval { font-size:9px;letter-spacing:.06em;padding:8px 5px; }
+    .dc-cmp-label { font-size:10px; }
+    .dc-spot-amount { font-size:clamp(28px,10vw,48px); }
+    .dc-r-value { font-size:22px; }
+    .dc-email-heading { font-size:clamp(15px,4vw,22px); }
+    .dc-save-url { font-size:10px; }
+    .dc-bar-meta { font-size:11px; }
+  }
+  @media(max-width:380px){
+    .dc-table thead th,.dc-table tbody td { padding:5px 3px;font-size:10px; }
+    .dc-cmp-cell { padding:5px 3px;font-size:9px; }
+    .dc-field-label { width:82px;font-size:12px; }
+  }
   .dc-r-card { border-radius:14px;padding:22px;position:relative;overflow:hidden; }
   .dc-snow { background:linear-gradient(135deg,#1a1400,#231c00);border:1px solid rgba(255,179,0,.25); }
   .dc-aval { background:linear-gradient(135deg,#001a1f,#002030);border:1px solid rgba(0,229,255,.25); }
