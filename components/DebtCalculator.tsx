@@ -525,13 +525,13 @@ export default function DebtCalculator() {
                   <div style={{ fontSize: 48, marginBottom: 12 }}>🎉</div>
                   <div className="dc-success-heading">You&apos;re in!</div>
                   <div className="dc-email-sub"></div>
-                  {results.resultsURL && (
+                  {/* {results.resultsURL && (
                     <div className="dc-save-card" style={{ marginTop: 16, textAlign: 'left' }}>
                       <div className="dc-save-label">🔗 Or copy your results link directly:</div>
                       <div className="dc-save-url">{results.resultsURL.length > 60 ? results.resultsURL.slice(0, 60) + '…' : results.resultsURL}</div>
                       <button className="dc-copy-btn" onClick={copyLink}>{copied ? '✅ Copied!' : '📋 Copy My Results Link'}</button>
                     </div>
-                  )}
+                  )} */}
                 </div>
               )}
             </div>
