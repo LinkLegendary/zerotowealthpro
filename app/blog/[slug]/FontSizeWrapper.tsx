@@ -17,6 +17,7 @@ export default function FontSizeWrapper({
   description,
   plainText,
   readingTime,
+   onThemeChange, // 👈 add this
 }: {
   children: ReactNode;
   title: string;
@@ -24,6 +25,7 @@ export default function FontSizeWrapper({
   description?: string;
   plainText?: string;
   readingTime?: number;
+  onThemeChange?: (isDark: boolean) => void; // 👈 add this
 }) {
   const [sizeIndex, setSizeIndex] = useState(1);
   const [isDark, setIsDark] = useState(false);
@@ -40,6 +42,13 @@ export default function FontSizeWrapper({
   const wordIndexRef = useRef(0);
 
   const currentSize = sizes[sizeIndex];
+
+  const toggleDark = () => {
+  const next = !isDark;
+  setIsDark(next);
+  onThemeChange?.(next); // 👈 add this
+};
+
 
   // ── Cleanup on unmount ──
   useEffect(() => {
@@ -257,7 +266,7 @@ export default function FontSizeWrapper({
             className={`w-px h-5 ${isDark ? 'bg-gray-600' : 'bg-gray-300'}`}
           />
           <button
-            onClick={() => setIsDark(!isDark)}
+            onClick={toggleDark}
             className={`flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium border transition-all ${isDark ? 'bg-[#4472C4] text-white border-[#4472C4]' : 'bg-gray-100 text-gray-600 border-gray-300 hover:border-[#4472C4]'}`}
           >
             {isDark ? '☀️ Day' : '🌙 Night'}

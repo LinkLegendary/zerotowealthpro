@@ -11,7 +11,7 @@ import RelatedArticles from '@/components/RelatedArticles';
 import ResourceLinks from '@/components/ResourceLinks';
 import { ArrowToHome } from '@/components/ArrowToHome';
 import Link from 'next/link';
-import KitInlineForm2 from '@/components/KitInlineForm2';
+import EmailCapture from './EmailCapture'; // add this import
 
 interface BlogPostProps {
   params: Promise<{ slug: string }>;
@@ -28,6 +28,7 @@ const components = {
   ResourceLinks,
   ArrowToHome,
   Link,
+  EmailCapture,
 };
 
 // Metadata generation
@@ -150,12 +151,31 @@ export default async function BlogPost({ params }: BlogPostProps) {
            <strong className='text-blue-400'> View the Complete Debt Payoff Guide →</strong>
            
           </Link>
+          
+        </section>
+        <section className="mt-16 bg-gradient-to-br from-[#1F4E78] to-[#4472C4] text-white rounded-xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-4">
+         <strong className='text-white'> Calculate My Debt-Free Date → </strong>  
+          </h3>
+          <div className="mb-6 mt-12 text-white/90 text-lg ">
+            Enter your debts → click Calculate → see exactly how long & how much
+
+
+          </div>
+         
+          <Link
+            href="/calculator"
+            className="inline-block bg-white text-[#1F4E78] px-6 py-3 rounded-full font-bold hover:scale-105 transition"
+          >
+           <strong className='text-blue-400'> Free Debt Payoff Calculator →</strong>
+           
+          </Link>
         </section>
 
-        <section className="mt-16">
-          {/* EMAIL OPT-IN */}
-          <KitInlineForm2 />
-        </section>
+        {/* Email capture */}
+        <EmailCapture />
+
+        
 
         <ArticleDisclaimer />
         <ArticleFooter />

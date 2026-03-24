@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState, useMemo } from 'react';
-import KitInlineForm from '@/components/KitInlineForm';
+
 import type { Post } from '@/lib/blog';
 
 
@@ -300,9 +300,7 @@ export default function BlogPageClient({ posts }: { posts: Post[] }) {
         )}
 
         {/* Bottom CTA — inline email opt-in */}
-        <div className="mt-12">
-          <KitInlineForm />
-        </div>
+        
 
         {/* ADD DISCLAIMER HERE */}
         <div className="mt-6 text-center max-w-2xl mx-auto">

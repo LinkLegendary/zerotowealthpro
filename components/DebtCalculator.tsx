@@ -38,8 +38,8 @@ interface Results {
 }
 
 // ── Constants ──────────────────────────────────────────────────────────────
-const KIT_FORM_ID = '9140184';
-const KIT_API_KEY = 'UAO6EwPLw27_tRZlBjL-9g'; // ← replace with your Kit API key
+const KIT_FORM_ID = process.env.NEXT_PUBLIC_KIT_FORM_ID;
+const KIT_API_KEY = process.env.NEXT_PUBLIC_KIT_API_KEY;
 
 const DEFAULT_DEBTS: Omit<Debt, 'id'>[] = [
   { name: 'Credit Card 1',  balance: '3500',  rate: '22.99', min: '102' },
