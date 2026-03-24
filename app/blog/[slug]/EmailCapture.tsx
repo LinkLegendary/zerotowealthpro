@@ -7,8 +7,12 @@ export default function EmailCapture({ isDark = false }: { isDark?: boolean }) {
   const [email, setEmail] = useState('');
   const [kitStatus, setKitStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
   const [kitError, setKitError] = useState('');
-  const KIT_FORM_ID = process.env.NEXT_PUBLIC_KIT_FORM_ID;
-const KIT_API_KEY = process.env.NEXT_PUBLIC_KIT_API_KEY;
+//   const KIT_FORM_ID = process.env.NEXT_PUBLIC_KIT_FORM_ID;
+// const KIT_API_KEY = process.env.NEXT_PUBLIC_KIT_API_KEY;
+
+const KIT_FORM_ID = '9140184';
+const KIT_API_KEY = 'UAO6EwPLw27_tRZlBjL-9g';
+
 
    const submitToKit = async () => {
   if (!email || !email.includes('@')) return;
