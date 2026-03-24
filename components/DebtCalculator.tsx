@@ -38,8 +38,12 @@ interface Results {
 }
 
 // ── Constants ──────────────────────────────────────────────────────────────
-const KIT_FORM_ID = process.env.NEXT_PUBLIC_KIT_FORM_ID;
-const KIT_API_KEY = process.env.NEXT_PUBLIC_KIT_API_KEY;
+// const KIT_FORM_ID = process.env.NEXT_PUBLIC_KIT_FORM_ID;
+// const KIT_API_KEY = process.env.NEXT_PUBLIC_KIT_API_KEY;
+
+const KIT_FORM_ID = '9140184';
+const KIT_API_KEY = 'UAO6EwPLw27_tRZlBjL-9g';
+
 
 const DEFAULT_DEBTS: Omit<Debt, 'id'>[] = [
   { name: 'Credit Card 1',  balance: '3500',  rate: '22.99', min: '102' },
@@ -261,7 +265,7 @@ export default function DebtCalculator() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          api_key:    KIT_API_KEY,
+          api_key: KIT_API_KEY,
           email,
           first_name: fname || undefined,
           fields:     { results_url: results.resultsURL || '' },
