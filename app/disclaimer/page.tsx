@@ -61,7 +61,7 @@ export default function DisclaimerPage() {
             </p>
           </div>
 
-          <div>
+          {/* <div>
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Current Affiliate Relationships</h2>
             <p className="text-gray-600 leading-relaxed mb-3">
               We participate in affiliate programs with the following companies:
@@ -71,7 +71,7 @@ export default function DisclaimerPage() {
               <li>Amazon Associates (for book recommendations)</li>
               <li>[Add other affiliate programs as you join them]</li>
             </ul>
-          </div>
+          </div> */}
 
           <div>
             <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Our Commitment</h2>
