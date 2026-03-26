@@ -55,7 +55,7 @@ export async function generateMetadata({
       description: post.description,
       type: 'article',
       publishedTime: post.date,
-      url: `https://yoursite.com/blog/${slug}`,
+      url: `https://zerotowealthpro.com/blog/${slug}`,
       siteName: 'Debt Freedom Guide',
     },
     twitter: {

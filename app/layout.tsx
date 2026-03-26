@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  verification: {
+    google: "WlHPyV2SKreAqYI7SbWfoGb-SQTmlmZhIbZrRBrDxR4", // 👈 paste your code here (only the content value)
+  },
   metadataBase: new URL("https://zerotowealthpro.com"),
   title: {
     default: "Zero to Wealth Pro",
