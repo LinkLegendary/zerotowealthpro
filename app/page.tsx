@@ -176,178 +176,178 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-6">
             <Link
               href="/blog/how-to-pay-off-debt-fast"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600  font-semibold"
             >
               → How to Pay Off Debt Fast (Step-by-Step Plan)
             </Link>
 
             <Link
               href="/blog/debt-snowball-vs-debt-avalanche"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Debt Snowball vs Debt Avalanche
             </Link>
 
             <Link
               href="/blog/minimum-payment-trap-explained"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → The Minimum Payment Trap Explained
             </Link>
 
             <Link
               href="/blog/credit-card-interest-explained"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Credit Card Interest Explained
             </Link>
 
             <Link
               href="/blog/invest-or-pay-off-debt-first"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Invest or Pay Off Debt First?
             </Link>
 
             <Link
               href="/blog/how-much-does-extra-100-save"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How Much Does an Extra $100 Save?
             </Link>
 
             <Link
               href="/blog/psychology-of-paying-off-debt"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → The Psychology of Paying Off Debt
             </Link>
 
             <Link
               href="/blog/how-to-stop-using-credit-cards"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Stop Using Credit Cards
             </Link>
 
             <Link
               href="/blog/how-to-use-debt-payoff-calculator"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Use a Debt Payoff Calculator
             </Link>
             <Link
               href="/blog/how-to-stop-living-paycheck-to-paycheck"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Stop Living Paycheck to Paycheck
             </Link>
             <Link
               href="/blog/zero-paycheck-budget-method"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → The $0 Paycheck Budget Method: How It Works
             </Link>
             <Link
               href="/blog/how-to-build-emergency-fund-on-low-income"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Build an Emergency Fund on Low Income
             </Link>
             <Link
               href="/blog/5-mistakes-keeping-you-stuck-broke"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → 5 Mistakes Keeping You Stuck Broke
             </Link>
             <Link
               href="/blog/how-to-reset-your-finances-in-30-days"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Reset Your Finances in 30 Days
             </Link>
             <Link
               href="/blog/how-to-get-out-of-debt-on-low-income"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Get Out of Debt on a Low Income
             </Link>
             <Link
               href="/blog/credit-card-debt-forgiveness"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Credit Card Debt Forgiveness: Real vs. Scam
             </Link>
             <Link
               href="/blog/how-to-get-lower-interest-rate-credit-card"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Get a Lower Interest Rate on a Credit Card
             </Link>
             <Link
               href="/blog/how-to-budget-with-irregular-income"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Budget With an Irregular Income
             </Link>
             <Link
               href="/blog/how-to-save-1000-fast"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Save $1,000 Fast: A Realistic Step-by-Step Plan
             </Link>
             <Link
               href="/blog/how-to-rebuild-credit-after-debt"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Rebuild Credit After Debt: A Step-by-Step Plan
             </Link>
             <Link
               href="/blog/balance-transfer-cards-when-they-help"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Balance Transfer Cards: When They Help vs. Backfire
             </Link>
             <Link
               href="/blog/what-order-to-pay-off-debts"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → What Order Should I Pay Off My Debts?
             </Link>
             <Link
               href="/blog/how-to-get-out-of-payday-loan-debt"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → How to Get Out of Payday Loan Debt: A Step-by-Step Plan
             </Link>
 
             <Link
               href="/blog/5-mistakes-keeping-you-stuck-broke"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → 5 Mistakes Keeping You Stuck Broke
             </Link>
             <Link
               href="/blog/best-budgeting-apps-for-debt-payoff"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Best Budgeting Apps for Paying Off Debt in 2026
             </Link>
             <Link
               href="/blog/budgeting-when-youre-broke"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Budgeting When You are Broke: A Realistic System
             </Link>
             <Link
               href="/blog/how-long-to-pay-off-50k-credit-card-debt"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → Pay Off $50K at 20% Interest: Month-by-Month Breakdown
             </Link>
             <Link
               href="/blog/the-complete-debt-payoff-system"
-              className="hover:underline text-gray-600"
+              className="hover:underline text-gray-600 font-semibold"
             >
               → The Complete Debt Payoff System
             </Link>
