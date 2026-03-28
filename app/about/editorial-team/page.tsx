@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link';
 
 export const metadata = {
   title: 'Editorial Standards — ZeroToWealthPro',
@@ -9,7 +9,6 @@ export const metadata = {
 export default function EditorialTeamPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-
       {/* Banner */}
       <div className="relative w-full overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#1F4E78] via-[#2d6a9f] to-[#4472C4]" />
@@ -18,7 +17,9 @@ export default function EditorialTeamPage() {
 
         <div className="relative z-10 max-w-3xl mx-auto px-6 py-10 text-center">
           <div className="flex items-center justify-center gap-2 text-blue-200 text-sm mb-6">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <Link href="/" className="hover:text-white transition-colors">
+              Home
+            </Link>
             <span>›</span>
             <span className="text-white/70">Editorial Standards</span>
           </div>
@@ -26,13 +27,22 @@ export default function EditorialTeamPage() {
             Editorial Standards
           </h1>
           <p className="text-blue-100 text-lg max-w-xl mx-auto leading-relaxed">
-            How we research, write, verify, and update every article on this site.
+            How we research, write, verify, and update every article on this
+            site.
           </p>
         </div>
 
         <div className="relative z-10">
-          <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-50">
-            <path d="M0 48 C360 0 1080 0 1440 48 L1440 48 L0 48 Z" fill="currentColor" />
+          <svg
+            viewBox="0 0 1440 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-gray-50"
+          >
+            <path
+              d="M0 48 C360 0 1080 0 1440 48 L1440 48 L0 48 Z"
+              fill="currentColor"
+            />
           </svg>
         </div>
       </div>
@@ -40,20 +50,22 @@ export default function EditorialTeamPage() {
       {/* Content */}
       <div className="max-w-3xl mx-auto px-6 py-12">
         <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 space-y-8">
-
           {/* Who we are */}
           <div>
             <p className="text-gray-600 leading-relaxed">
-              ZeroToWealthPro publishes personal finance guides focused on one problem: how real
-              households get out of debt, build financial stability, and stop the paycheck-to-paycheck
-              cycle — without financial jargon, unrealistic assumptions, or advice calibrated for
-              people who already have money.
+              ZeroToWealthPro publishes personal finance guides focused on one
+              problem: how real households get out of debt, build financial
+              stability, and stop the paycheck-to-paycheck cycle — without
+              financial jargon, unrealistic assumptions, or advice calibrated
+              for people who already have money.
             </p>
           </div>
 
           {/* What we cover */}
           <div>
-            <h2 className="text-xl font-bold text-[#1F4E78] mb-4">What We Cover</h2>
+            <h2 className="text-xl font-bold text-[#1F4E78] mb-4">
+              What We Cover
+            </h2>
             <div className="space-y-3">
               {[
                 {
@@ -85,7 +97,9 @@ export default function EditorialTeamPage() {
 
           {/* Our standards */}
           <div>
-            <h2 className="text-xl font-bold text-[#1F4E78] mb-4">Our Editorial Standards</h2>
+            <h2 className="text-xl font-bold text-[#1F4E78] mb-4">
+              Our Editorial Standards
+            </h2>
             <div className="space-y-4">
               {[
                 {
@@ -106,12 +120,17 @@ export default function EditorialTeamPage() {
                 },
                 {
                   title: 'We do not accept payment for editorial coverage.',
-                  body: 'Our articles do not recommend specific financial products in exchange for compensation. Where affiliate relationships exist, they are disclosed. Advertisers do not influence editorial content.',
+                  body: 'Our articles are never written in exchange for compensation. Where affiliate relationships exist, they are clearly disclosed at the bottom of the article. Affiliate commissions do not influence our recommendations — we only promote tools and products we genuinely believe help readers eliminate debt faster. If we do not believe in a product, we do not promote it, regardless of commission rate.',
                 },
               ].map(({ title, body }) => (
-                <div key={title} className="bg-gray-50 rounded-xl p-4 border border-gray-100">
+                <div
+                  key={title}
+                  className="bg-gray-50 rounded-xl p-4 border border-gray-100"
+                >
                   <p className="text-gray-800 font-semibold mb-1">{title}</p>
-                  <p className="text-gray-600 text-sm leading-relaxed">{body}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {body}
+                  </p>
                 </div>
               ))}
             </div>
@@ -119,9 +138,12 @@ export default function EditorialTeamPage() {
 
           {/* How articles are written */}
           <div>
-            <h2 className="text-xl font-bold text-[#1F4E78] mb-4">How Our Articles Are Written</h2>
+            <h2 className="text-xl font-bold text-[#1F4E78] mb-4">
+              How Our Articles Are Written
+            </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Each article is produced through a structured research and writing process:
+              Each article is produced through a structured research and writing
+              process:
             </p>
             <div className="space-y-2">
               {[
@@ -141,46 +163,58 @@ export default function EditorialTeamPage() {
               ))}
             </div>
             <p className="text-gray-600 leading-relaxed mt-4">
-              Articles are updated when source URLs change, when underlying data is revised by the
-              issuing organization, or when reader feedback identifies an error.
+              Articles are updated when source URLs change, when underlying data
+              is revised by the issuing organization, or when reader feedback
+              identifies an error.
             </p>
           </div>
 
           {/* Corrections */}
           <div>
-            <h2 className="text-xl font-bold text-[#1F4E78] mb-3">Corrections</h2>
+            <h2 className="text-xl font-bold text-[#1F4E78] mb-3">
+              Corrections
+            </h2>
             <p className="text-gray-600 leading-relaxed">
-              If you find an error — a dead link, an incorrect statistic, or a calculation that does
-              not match the cited source — please{' '}
+              If you find an error — a dead link, an incorrect statistic, or a
+              calculation that does not match the cited source — please{' '}
               <Link href="/contact" className="text-[#4472C4] hover:underline">
                 contact us
               </Link>
-              . We correct errors promptly and update the article's last-reviewed date when
-              substantive changes are made.
+              . We correct errors promptly and update the article's
+              last-reviewed date when substantive changes are made.
             </p>
           </div>
 
           {/* Disclaimer */}
           <div className="border-t border-gray-100 pt-6">
             <p className="text-gray-500 text-sm leading-relaxed italic">
-              ZeroToWealthPro is an independent personal finance publication. This site does not
-              provide personalized financial advice. All content is for educational purposes only.
-              See our{' '}
-              <Link href="/terms" className="text-[#4472C4] hover:underline">Terms of Use</Link>
-              {' '}and{' '}
-              <Link href="/disclaimer" className="text-[#4472C4] hover:underline">Affiliate Disclosure</Link>
-              {' '}for full details.
+              ZeroToWealthPro is an independent personal finance publication.
+              This site does not provide personalized financial advice. All
+              content is for educational purposes only. See our{' '}
+              <Link href="/terms" className="text-[#4472C4] hover:underline">
+                Terms of Use
+              </Link>{' '}
+              and{' '}
+              <Link
+                href="/disclaimer"
+                className="text-[#4472C4] hover:underline"
+              >
+                Affiliate Disclosure
+              </Link>{' '}
+              for full details.
             </p>
           </div>
-
         </div>
 
         <div className="mt-6 text-center">
-          <Link href="/" className="text-[#4472C4] text-sm font-medium hover:underline">
+          <Link
+            href="/"
+            className="text-[#4472C4] text-sm font-medium hover:underline"
+          >
             ← Back to Home
           </Link>
         </div>
       </div>
     </div>
-  )
+  );
 }

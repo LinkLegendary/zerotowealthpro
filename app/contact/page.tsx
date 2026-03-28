@@ -44,7 +44,8 @@ export default function ContactPage() {
           {/* FIX 1 — uncommented response time */}
           <div className="bg-blue-50 border-l-4 border-[#4472C4] p-4 rounded">
             <p className="text-gray-700 text-sm leading-relaxed">
-              We typically respond within <strong>24–48 hours</strong> on business days.
+              We read every message and respond as soon as we can. 
+             Response times may vary depending on volume.
             </p>
           </div>
 
