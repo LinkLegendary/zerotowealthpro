@@ -468,7 +468,7 @@ export default function DebtPayoffPage() {
                 and <strong className="text-gray-700">15 months</strong> of
                 payments.{' '}
                 <Link
-                  href="/blog/pay-off-50k-credit-card-debt"
+                  href="/blog/how-long-to-pay-off-50k-credit-card-debt"
                   className="text-[#4472C4] hover:underline"
                 >
                   See the full month-by-month breakdown →
