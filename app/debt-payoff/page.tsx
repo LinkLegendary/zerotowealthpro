@@ -482,7 +482,7 @@ export default function DebtPayoffPage() {
 
             {/* FAQ */}
             <section>
-              <h2 className="text-3xl font-bold text-[#1F4E78] mb-6">
+              <h2 className="text-3xl font-bold text-[#1F4E78] mb-6 mt-14">
                 Frequently Asked Questions
               </h2>
               <div className="space-y-6">
