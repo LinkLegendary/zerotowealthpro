@@ -117,12 +117,12 @@ const spokes = {
       label: 'The Minimum Payment Trap: How $10,000 Becomes $21,000',
     },
     {
-      href: '/blog/pay-off-50k-credit-card-debt',
+      href: '/blog/how-long-to-pay-off-50k-credit-card-debt',
       label: 'Pay Off $50K at 20% Interest: Month-by-Month Breakdown',
     },
 
     {
-      href: '/blog/extra-$100-on-debt',
+      href: '/blog/how-much-does-extra-100-save',
       label: 'Extra $100 on Debt: How Much Does It Save?',
     },
     {
