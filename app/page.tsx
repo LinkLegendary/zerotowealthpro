@@ -351,12 +351,7 @@ export default function HomePage() {
             >
               → The Complete Debt Payoff System
             </Link>
-             <Link
-              href="/blog/how-much-does-extra-100-save"
-              className="hover:underline text-gray-600 font-semibold"
-            >
-              → Extra $100 on Debt: How Much Does It Save?
-            </Link>
+             
           </div>
         </section>
 
