@@ -254,12 +254,7 @@ export default function HomePage() {
             >
               → How to Build an Emergency Fund on Low Income
             </Link>
-            <Link
-              href="/blog/5-mistakes-keeping-you-stuck-broke"
-              className="hover:underline text-gray-600 font-semibold"
-            >
-              → 5 Mistakes Keeping You Stuck Broke
-            </Link>
+            
             <Link
               href="/blog/how-to-reset-your-finances-in-30-days"
               className="hover:underline text-gray-600 font-semibold"
