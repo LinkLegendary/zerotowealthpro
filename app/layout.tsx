@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     'personal finance tips',
     'budgeting for beginners',
     'how to get out of debt',
+    'financial calculators', // ADD
+    'loan calculator', // ADD
+    'budget calculator', // ADD
+     // ... rest of your keywords
   ],
   authors: [{ name: 'Zero to Wealth Pro' }],
   openGraph: {
