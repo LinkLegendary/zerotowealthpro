@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import DebtCalculatorEmbed from '@/components/DebtCalculatorEmbed';
+// import DebtCalculatorEmbed from '@/components/DebtCalculatorEmbed';
+import DebtCalculator from '@/components/DebtCalculator';
 
 export const metadata: Metadata = {
   title: 'Zero to Wealth Pro - Free Financial Calculators & Debt Payoff Tools',
@@ -349,7 +350,8 @@ export default function HomePage() {
             <h2 className="text-2xl font-bold text-[#1F4E78] mb-4 text-center">
               Try Our Debt Payoff Calculator
             </h2>
-            <DebtCalculatorEmbed />
+            {/* <DebtCalculatorEmbed /> */}
+            <DebtCalculator />
           </section>
 
           {/* DEDICATED PROFESSIONAL HELP WARNING (YMYL REQUIREMENT) */}
