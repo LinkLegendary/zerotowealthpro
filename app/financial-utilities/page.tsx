@@ -498,7 +498,7 @@ export default function FinancialUtilitiesPage() {
           )}
 
           {/* Email Newsletter Signup */}
-          <section className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 shadow-xl text-white">
+          {/* <section className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 shadow-xl text-white">
             <div className="text-center max-w-2xl mx-auto">
               <div className="text-4xl mb-4">📧</div>
               <h3 className="text-2xl font-bold mb-3">
@@ -510,7 +510,7 @@ export default function FinancialUtilitiesPage() {
               </p>
 
               {/* Email Form - Ready to connect to your email service */}
-              <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              {/* <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -528,7 +528,7 @@ export default function FinancialUtilitiesPage() {
                 No spam. Unsubscribe anytime. We respect your privacy.
               </p>
             </div>
-          </section>
+          </section> */} 
 
           {/* Why Use Our Tools */}
           <section className="bg-white rounded-2xl p-8 shadow-xl">
