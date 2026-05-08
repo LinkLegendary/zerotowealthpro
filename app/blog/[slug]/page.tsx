@@ -164,7 +164,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
           </div>
          
           <Link
-            href="/calculator"
+            href="/debt-payoff"
             className="inline-block bg-white text-[#1F4E78] px-6 py-3 rounded-full font-bold hover:scale-105 transition"
           >
            <strong className='text-blue-400'> Free Debt Payoff Calculator →</strong>
