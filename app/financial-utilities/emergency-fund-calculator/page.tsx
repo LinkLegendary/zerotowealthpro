@@ -507,7 +507,7 @@ export default function EmergencyFundCalculatorPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
-                href="/wealth-guide"
+                href="/debt-payoff"
                 className="bg-white text-[#1F4E78] px-5 py-2.5 rounded-lg font-bold hover:bg-gray-100 transition shadow-md text-sm"
               >
                 Zero to Wealth Roadmap →
