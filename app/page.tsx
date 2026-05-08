@@ -261,7 +261,7 @@ export default function HomePage() {
         </div>
 
         {/* MAIN CONTENT CONTAINER */}
-        <main className="max-w-[1000px] mx-auto px-5 py-8 sm:py-12 space-y-12 sm:space-y-16">
+        <main className="max-w-[1000px] mx-auto px-5 py-15 sm:py-12 space-y-12 sm:space-y-16">
           {/* FEATURED CALCULATORS (Sits prominently at the top of the page stream) */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-2xl -mt-20 relative z-30 border border-gray-100">
             <div className="text-center mb-8">
