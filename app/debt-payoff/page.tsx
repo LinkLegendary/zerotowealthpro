@@ -250,10 +250,14 @@ export default function DebtPayoffPage() {
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 font-medium">
               <span className="flex items-center gap-1">
                 <span>Published by</span>
-                <span className="font-bold text-[#1F4E78] ">
+                <Link
+                  href="/about/editorial-team"
+                  className="font-bold text-[#1F4E78] hover:underline"
+                >
                   ZeroToWealthPro Editorial Team
-                </span>
+                </Link>
               </span>
+
               <span className="text-gray-350">•</span>
               <span className="flex items-center gap-1">
                 <span className="text-emerald-600">✓</span>
