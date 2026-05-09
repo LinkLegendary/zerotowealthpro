@@ -519,7 +519,7 @@ export default function TakeHomePayCalculatorPage() {
               </div>
             </section>
 
-             {/* AUTHORITATIVE SOURCE CITATIONS (YMYL REQUIREMENT) */}
+            {/* AUTHORITATIVE SOURCE CITATIONS (YMYL REQUIREMENT) */}
             <section className="mt-12 border-t border-gray-200 pt-8 text-left font-normal">
               <h3 className="text-base font-bold text-[#1F4E78] mb-4">
                 Sources & Authoritative Citations
@@ -528,34 +528,59 @@ export default function TakeHomePayCalculatorPage() {
                 <li className="flex items-start gap-2">
                   <span className="text-[#4472C4] font-bold">1.</span>
                   <span>
-                    <strong>Federal Deposit Insurance Corporation (FDIC):</strong> National savings rate averages, FDIC insurance coverage guidelines, and bank deposit standards. 
-                    <a href="https://www.fdic.gov" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4472C4] hover:underline ml-1">fdic.gov</a>
+                    <strong>
+                      Federal Deposit Insurance Corporation (FDIC):
+                    </strong>{' '}
+                    National savings rate averages, FDIC insurance coverage
+                    guidelines, and bank deposit standards.
+                    <a
+                      href="https://www.fdic.gov"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="text-[#4472C4] hover:underline ml-1"
+                    >
+                      fdic.gov
+                    </a>
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#4472C4] font-bold">2.</span>
                   <span>
-                    <strong>Consumer Financial Protection Bureau (CFPB):</strong> Guidelines on creating liquid savings buffers, managing household savings goals, and bank product comparisons. 
-                    <a href="https://www.consumerfinance.gov" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4472C4] hover:underline ml-1">consumerfinance.gov</a>
+                    <strong>
+                      Consumer Financial Protection Bureau (CFPB):
+                    </strong>{' '}
+                    Guidelines on creating liquid savings buffers, managing
+                    household savings goals, and bank product comparisons.
+                    <a
+                      href="https://www.consumerfinance.gov"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="text-[#4472C4] hover:underline ml-1"
+                    >
+                      consumerfinance.gov
+                    </a>
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <span className="text-[#4472C4] font-bold">3.</span>
                   <span>
-                    <strong>Board of Governors of the Federal Reserve System:</strong> Historical monetary policy interest rates and national household savings trends. 
-                    <a href="https://www.federalreserve.gov" target="_blank" rel="noopener noreferrer nofollow" className="text-[#4472C4] hover:underline ml-1">federalreserve.gov</a>
+                    <strong>
+                      Board of Governors of the Federal Reserve System:
+                    </strong>{' '}
+                    Historical monetary policy interest rates and national
+                    household savings trends.
+                    <a
+                      href="https://www.federalreserve.gov"
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="text-[#4472C4] hover:underline ml-1"
+                    >
+                      federalreserve.gov
+                    </a>
                   </span>
                 </li>
               </ul>
             </section>
-
-
-
-
-
-
-
-
           </article>
 
           {/* Related Tools Links */}
@@ -655,7 +680,7 @@ export default function TakeHomePayCalculatorPage() {
         <footer className="text-center text-gray-600 pb-12 opacity-90 text-xs px-5 border-t border-gray-200 pt-8 max-w-[1000px] mx-auto">
           <div className="flex items-center justify-center gap-4 flex-wrap mb-3 font-medium">
             <Link href="/privacy" className="hover:underline">
-              Privacy
+              Privacy Policy
             </Link>
             <span>•</span>
             <Link href="/terms" className="hover:underline">
@@ -666,10 +691,15 @@ export default function TakeHomePayCalculatorPage() {
               Disclosure
             </Link>
             <span>•</span>
+            <Link href="/about/editorial-team" className="hover:underline">
+              Editorial Standards
+            </Link>
+            <span>•</span>
             <Link href="/contact" className="hover:underline">
               Contact Support
             </Link>
           </div>
+
           <p>
             © {new Date().getFullYear()} ZeroToWealthPro. All rights reserved.
           </p>

@@ -686,10 +686,15 @@ export default function BudgetCalculatorPage() {
               Disclosure
             </Link>
             <span>•</span>
+            <Link href="/about/editorial-team" className="hover:underline">
+              Editorial Standards
+            </Link>
+            <span>•</span>
             <Link href="/contact" className="hover:underline">
               Contact Support
             </Link>
           </div>
+
           <p>
             © {new Date().getFullYear()} ZeroToWealthPro. All rights reserved.
           </p>
