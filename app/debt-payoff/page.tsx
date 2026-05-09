@@ -292,7 +292,7 @@ export default function DebtPayoffPage() {
           <section className="bg-white rounded-2xl p-5 sm:p-8 shadow-xl mb-10 border border-gray-100">
             <div className="mb-6 text-center">
               <h2 className="text-2xl md:text-3xl font-bold text-[#1F4E78] mb-2">
-                Repayment Comparison Calculator
+                Debt Payoff Calculator
               </h2>
               <p className="text-sm text-gray-600 max-w-2xl mx-auto">
                 Compare the debt snowball and debt avalanche methods to see how
