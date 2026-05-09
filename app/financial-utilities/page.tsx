@@ -510,7 +510,7 @@ export default function FinancialUtilitiesPage() {
               </p>
 
               {/* Email Form - Ready to connect to your email service */}
-              {/* <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+          {/* <form className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
                 <input
                   type="email"
                   placeholder="Enter your email"
@@ -528,7 +528,7 @@ export default function FinancialUtilitiesPage() {
                 No spam. Unsubscribe anytime. We respect your privacy.
               </p>
             </div>
-          </section> */} 
+          </section> */}
 
           {/* Why Use Our Tools */}
           <section className="bg-white rounded-2xl p-8 shadow-xl">
@@ -631,7 +631,7 @@ export default function FinancialUtilitiesPage() {
 
         {/* Footer */}
         <footer className="text-center text-white pb-12 opacity-80 text-sm space-y-3 px-5">
-          <div className="flex items-center justify-center gap-4 flex-wrap">
+          <div className="flex items-center justify-center gap-4 flex-wrap mb-3 font-medium">
             <Link href="/privacy" className="hover:underline">
               Privacy Policy
             </Link>
@@ -641,13 +641,18 @@ export default function FinancialUtilitiesPage() {
             </Link>
             <span>•</span>
             <Link href="/disclaimer" className="hover:underline">
-              Affiliate Disclosure
+              Disclosure
+            </Link>
+            <span>•</span>
+            <Link href="/about/editorial-team" className="hover:underline">
+              Editorial Standards
             </Link>
             <span>•</span>
             <Link href="/contact" className="hover:underline">
-              Contact
+              Contact Support
             </Link>
           </div>
+
           <p>
             Copyright © {new Date().getFullYear()} ZeroToWealthPro. All rights
             reserved.
