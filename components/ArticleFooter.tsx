@@ -26,7 +26,7 @@ export default function ArticleFooter() {
             href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(typeof window !== 'undefined' ? document.title : 'Check out this article')}&url=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://zerotowealthpro.com')}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#9c9191] hover:bg-[#1a1a1a] text-white px-5 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-md"
+            className="inline-flex items-center gap-2 bg-[#91de1f] hover:bg-[#1a1a1a] text-white px-5 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-md"
             aria-label="Share on Twitter"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -40,7 +40,7 @@ export default function ArticleFooter() {
             href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://zerotowealthpro.com')}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#b5d417] hover:bg-[#0c63d4] text-white px-5 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-md"
+            className="inline-flex items-center gap-2 bg-[#91de1f] hover:bg-[#0c63d4] text-white px-5 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-md"
             aria-label="Share on Facebook"
           >
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -80,7 +80,7 @@ export default function ArticleFooter() {
           {/* Email */}
           <a
             href={`mailto:?subject=${encodeURIComponent(typeof window !== 'undefined' ? document.title : 'Check out this article')}&body=${encodeURIComponent(typeof window !== 'undefined' ? window.location.href : 'https://zerotowealthpro.com')}`}
-            className="inline-flex items-center gap-2 bg-[#dee3eb] hover:bg-[#4B5563] text-white px-5 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-md"
+            className="inline-flex items-center gap-2 bg-[#f2f3f5] hover:bg-[#4B5563] text-white px-5 py-3 rounded-lg font-semibold transition-all hover:scale-105 shadow-md"
             aria-label="Share via Email"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2.5">
