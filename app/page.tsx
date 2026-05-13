@@ -571,15 +571,16 @@ export default function HomePage() {
 
           {/* ── CONTENT HUB — 4 categories with light-color backgrounds ── */}
           <section className="bg-white rounded-2xl p-6 sm:p-8 shadow-xl border border-gray-100 text-left">
-            <h2 className="text-2xl font-bold text-[#1F4E78] mb-1">
-              Deep Dive: Debt Payoff Guides
-            </h2>
-            <p className="text-xs text-gray-500 mb-8">
-              Explore articles featuring real math, month-by-month breakdowns,
-              and sourced data.
-            </p>
+            <Link
+              href="/debt-payoff"
+              className="inline-block  hover:underline text-white px-6 py-3 rounded-full font-bold transition shadow-md cursor-pointer text-sm"
+            >
+              <h2 className="text-2xl hover:underline font-bold text-[#1F4E78] mb-1">
+                Deep Dive: Debt Payoff Guides →
+              </h2>
+            </Link>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs sm:text-sm mt-6">
               {/* STRATEGY (Soft Blue) */}
               <div className="bg-blue-50/50 border border-blue-100 rounded-xl p-5 sm:p-6 transition-all hover:shadow-sm">
                 <h3 className="text-sm font-bold tracking-widest uppercase text-[#1F4E78] mb-3 flex items-center gap-1.5">
