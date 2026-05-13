@@ -126,8 +126,10 @@ export default function WastedMoneyChart() {
                 <LabelList
                   dataKey="value"
                   position="top"
-                  formatter={(value: number) =>
-                    value === 0 ? '$0' : `$${value.toLocaleString()}`
+                  formatter={(value) =>
+                    (Number(value) === 0
+                      ? '$0'
+                      : `$${Number(value).toLocaleString()}`) as string
                   }
                   fill="#020617"
                   fontSize={17}
