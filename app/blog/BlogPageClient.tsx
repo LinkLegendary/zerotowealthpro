@@ -32,7 +32,6 @@ const FINANCIAL_TOOLS = [
   },
 ];
 
-
 export default function BlogPageClient({ posts }: { posts: Post[] }) {
   const [query, setQuery] = useState('');
 
@@ -277,7 +276,7 @@ export default function BlogPageClient({ posts }: { posts: Post[] }) {
                       </span>
                       <span className="text-xs text-gray-300">•</span>
                       <span className="text-xs font-medium text-[#4472C4] bg-blue-50 px-2 py-0.5 rounded-full">
-                        💰 Debt Strategy 
+                        💰 Debt Strategy
                       </span>
                     </div>
                   </div>
@@ -316,69 +315,89 @@ export default function BlogPageClient({ posts }: { posts: Post[] }) {
         )}
 
         {/* Bottom CTA — inline email opt-in */}
-        
-         {/* Financial Tools CTA */}
-<div className="mt-12 bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
-  <div className="text-center mb-6">
-    <h3 className="text-2xl font-bold text-[#1F4E78] mb-2">
-      Want to Calculate Your Financial Position?
-    </h3>
-    <p className="text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed">
-      Reading guides is helpful — but seeing your numbers is even better. Use our free financial calculators
-      to measure your net worth, budget, take-home pay, and savings progress.
-    </p>
-  </div>
 
-  <div className="grid sm:grid-cols-2 gap-4">
-    {FINANCIAL_TOOLS.map((tool) => (
-      <Link
-        key={tool.href}
-        href={tool.href}
-        className="group rounded-xl border border-gray-100 bg-gray-50 hover:bg-white hover:shadow-md hover:border-[#4472C4]/30 transition-all p-4 text-left"
-      >
-        <div className="flex items-start gap-3">
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#4472C4] to-[#1F4E78] text-white flex items-center justify-center text-xl shadow-sm flex-shrink-0">
-            {tool.icon}
+        {/* Financial Tools CTA */}
+
+
+
+
+
+
+
+
+
+
+
+        <div className="financial-tools-card not-prose mt-12 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm sm:p-8">
+          <div className="mb-6 text-center">
+            <h3 className="mb-2 text-2xl font-bold">
+              Want to Calculate Your Financial Position? 
+            </h3>
+
+            <p className="mx-auto max-w-2xl text-sm leading-relaxed">
+              Reading guides is helpful — but seeing your numbers is even
+              better. Use our free financial calculators to measure your net
+              worth, budget, take-home pay, and savings progress.
+            </p>
           </div>
 
-          <div className="min-w-0">
-            <h4 className="font-bold text-gray-900 group-hover:text-[#4472C4] transition-colors text-sm sm:text-base">
-              {tool.title}
-            </h4>
-            <p className="text-xs sm:text-sm text-gray-600 mt-1 leading-relaxed">
-              {tool.description}
-            </p>
-            <div className="mt-2 text-xs font-semibold text-[#4472C4]">
-              Open calculator →
-            </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {FINANCIAL_TOOLS.map((tool) => (
+              <Link
+                key={tool.href}
+                href={tool.href}
+                className="financial-tools-link group rounded-xl border border-gray-100 bg-gray-50 p-4 text-left transition-all hover:border-[#4472C4]/30 hover:bg-white hover:shadow-md"
+              >
+                <div className="flex items-start gap-3">
+                  <div className="financial-tools-icon flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-[#4472C4] to-[#1F4E78] text-xl text-white shadow-sm">
+                    {tool.icon}
+                  </div>
+
+                  <div className="min-w-0">
+                    <h4>{tool.title}</h4>
+
+                    <p>{tool.description}</p>
+
+                    <div className="financial-tools-cta">Open calculator →</div>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-6 border-t border-gray-200 pt-5 text-center">
+            <Link
+              href="/financial-utilities"
+              className="financial-tools-main-link inline-flex items-center gap-2 text-sm font-bold"
+            >
+              View All Financial Calculator Tools
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
           </div>
         </div>
-      </Link>
-    ))}
-  </div>
 
-  <div className="mt-6 text-center pt-5 border-t border-gray-200">
-    <Link
-      href="/financial-utilities"
-      className="inline-flex items-center gap-2 text-[#4472C4] font-bold hover:underline text-sm"
-    >
-      View All Financial Calculator Tools
-      <svg
-        className="w-4 h-4"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 5l7 7-7 7"
-        />
-      </svg>
-    </Link>
-  </div>
-</div>
+
+
+
+
+
+
+
+
+
+
 
 
 

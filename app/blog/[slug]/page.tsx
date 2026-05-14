@@ -214,13 +214,27 @@ export default async function BlogPost({ params }: BlogPostProps) {
           </Link>
         </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/* Financial Tools CTA */}
         <div className="mt-12 bg-white rounded-2xl border border-gray-100 shadow-sm p-6 sm:p-8">
           <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-[#1F4E78] mb-2">
-              Want to Calculate Your Financial Position?
+            <h3 className="text-2xl font-bold !text-[#1F4E78] mb-2">
+              Want to Calculate Your Financial Position? 
             </h3>
-            <p className="text-sm text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm !text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Reading guides is helpful — but seeing your numbers is even
               better. Use our free financial calculators to measure your net
               worth, budget, take-home pay, and savings progress.
@@ -243,7 +257,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
                     <h4 className="font-bold text-gray-900 group-hover:text-[#4472C4] transition-colors text-sm sm:text-base">
                       {tool.title}
                     </h4>
-                    <p className="text-xs sm:text-sm text-gray-600 mt-1 leading-relaxed">
+                    <p className="text-xs sm:text-sm !text-gray-600 mt-1 leading-relaxed">
                       {tool.description}
                     </p>
                     <div className="mt-2 text-xs font-semibold text-[#4472C4]">
@@ -258,7 +272,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
           <div className="mt-6 text-center pt-5 border-t border-gray-200">
             <Link
               href="/financial-utilities"
-              className="inline-flex items-center gap-2 text-[#4472C4] font-bold hover:underline text-sm"
+              className="inline-flex items-center gap-2 !text-[#4472C4] font-bold hover:underline text-sm"
             >
               View All Financial Calculator Tools
               <svg
